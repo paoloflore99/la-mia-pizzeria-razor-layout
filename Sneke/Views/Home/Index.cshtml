@@ -86,12 +86,11 @@
 
 <p>@Sette.ToString("yyyy / MM / dd")</p>
 @{
-
+    DateTime oggi = DateTime.Now;
+    DateTime DomaniAnno = oggi.AddYears(1);
 }
+<p>data @DomaniAnno</p>
 <!--
-
-    6. Partendo dalla data di oggi (usando la classe DateTime) stampare in pagina
-    a. la data di 7 giorni fa
     b. che giorno della settimana è oggi (il risultato dovrà  essere il nome del giorno (Lunedì, Martedì, ...)
     c. che giorno della settimana sarà  nello stesso giorno e mese di oggi ma tra un anno (il risultato dovrÃ  essere il nome del giorno (Lunedì, Martedì, ...)-->
 
