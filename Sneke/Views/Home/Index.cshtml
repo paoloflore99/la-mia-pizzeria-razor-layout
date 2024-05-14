@@ -77,14 +77,19 @@
     </ul>
 
 
-    @{
+@{
     DateTime dateTime = DateTime.Now;
-    }
+    DateTime Sette = dateTime.AddDays(-7);
+}
 
 <p>@dateTime.ToString("yyyy / MM / dd     HH: mm:ss")</p>
+
+<p>@Sette.ToString("yyyy / MM / dd")</p>
+@{
+
+}
 <!--
 
-    5. Stampare in pagina la data e l'ora attuale (usando la classe DateTime) con il formato anno-mese-giorno ore:minuti:secondi
     6. Partendo dalla data di oggi (usando la classe DateTime) stampare in pagina
     a. la data di 7 giorni fa
     b. che giorno della settimana è oggi (il risultato dovrà  essere il nome del giorno (Lunedì, Martedì, ...)
