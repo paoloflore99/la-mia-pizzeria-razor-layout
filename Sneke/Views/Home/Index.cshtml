@@ -72,11 +72,16 @@
         {
             <li>@numero</li>
         }
-        }
+    }
 
     </ul>
 
 
+    @{
+    DateTime dateTime = DateTime.Now;
+    }
+
+<p>@dateTime.ToString("yyyy / MM / dd     HH: mm:ss")</p>
 <!--
 
     5. Stampare in pagina la data e l'ora attuale (usando la classe DateTime) con il formato anno-mese-giorno ore:minuti:secondi
