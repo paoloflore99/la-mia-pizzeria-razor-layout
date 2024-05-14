@@ -49,10 +49,36 @@
     }
 }
 <p>@Count</p>
+
+@{
+
+    int v = 18;
+    List<int> numneri = new List<int>();
+    numneri.Add(1);
+    numneri.Add(90);
+    Random random = new Random();
+    int RandomLista = random.Next(1, 90);
+    for (int i = 1; i <= v; i++ )
+    {
+        numneri.Add(RandomLista);
+        //<p>@numneri[i]</p> 
+    }
+}
+
+
+    <ul>
+        @{
+        foreach (int numero in numneri)
+        {
+            <li>@numero</li>
+        }
+        }
+
+    </ul>
+
+
 <!--
-3. Contare quante volte la lettera a è presente nalla frase "nel mezzo del cammin di nostra vita" e stampare questo valore in pagina
-4. Creare una List<int>
-    di 20 numeri interi (generati random da 1 a 90, 1 e 90 inclusi) e mostrare in pagina solo i numeri compresi tra 20 e 70
+
     5. Stampare in pagina la data e l'ora attuale (usando la classe DateTime) con il formato anno-mese-giorno ore:minuti:secondi
     6. Partendo dalla data di oggi (usando la classe DateTime) stampare in pagina
     a. la data di 7 giorni fa
