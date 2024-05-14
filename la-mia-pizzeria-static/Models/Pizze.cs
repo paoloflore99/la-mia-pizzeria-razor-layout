@@ -4,7 +4,7 @@ namespace la_mia_pizzeria_static.Models
 {
 
     
-    public class Pizze
+    public class Pizze 
     {
         public string Nome { get; set; }
         public string Descrizione { get; set; }
@@ -19,4 +19,15 @@ namespace la_mia_pizzeria_static.Models
             Prezzo = prezzo;
         }
     }
+}
+
+
+public class Classe
+{
+    public string Nome { get; set; }
+
+    public Classe(string nome)
+        {
+        this.Nome = nome;
+        }
 }
